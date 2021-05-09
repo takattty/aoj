@@ -5,21 +5,21 @@ int main() {
   int n, b, f, r, v;
   cin >> n;
 
-  vector<vector<int>> first(3, vector<int>(10));
-  vector<vector<int>> second(3, vector<int>(10));
-  vector<vector<int>> third(3, vector<int>(10));
-  vector<vector<int>> forth(3, vector<int>(10));
+  vector<vector<int> > first(3, vector<int>(10));
+  vector<vector<int> > second(3, vector<int>(10));
+  vector<vector<int> > third(3, vector<int>(10));
+  vector<vector<int> > forth(3, vector<int>(10));
 
   for(int i=0; i<n; i++) {
     cin >> b >> f >> r >> v;
     if(b == 1) {
-      first.at(f-1).at(r) = v;
+      first.at(f-1).at(r-1) = v;
     } else if(b == 2) {
-      second.at(f-1).at(r) = v;
+      second.at(f-1).at(r-1) = v;
     } else if(b == 3) {
-      third.at(f-1).at(r) = v;
+      third.at(f-1).at(r-1) = v;
     } else {
-      forth.at(f-1).at(r) = v;
+      forth.at(f-1).at(r-1) = v;
     }
   }
 
