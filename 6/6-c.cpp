@@ -5,10 +5,10 @@ int main() {
   int n, b, f, r, v;
   cin >> n;
 
-  vector<vector<int> > first(3, vector<int>(10));
-  vector<vector<int> > second(3, vector<int>(10));
-  vector<vector<int> > third(3, vector<int>(10));
-  vector<vector<int> > forth(3, vector<int>(10));
+  vector<vector<int>> first(3, vector<int>(10));
+  vector<vector<int>> second(3, vector<int>(10));
+  vector<vector<int>> third(3, vector<int>(10));
+  vector<vector<int>> forth(3, vector<int>(10));
 
   for(int i=0; i<n; i++) {
     cin >> b >> f >> r >> v;
